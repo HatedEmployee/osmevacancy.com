@@ -1,0 +1,81 @@
+body {
+	font-size: 40px;
+	margin: 0;
+	background: rgb(255, 255, 185);
+	color: grey;
+	
+	font-family: monospace;
+}
+
+table, th, td {
+	/* width: 0%; */
+	border: 1px solid black;
+	border-collapse: collapse;
+	
+	
+	margin-left: 30px;
+	padding: 10px;
+	/* background: blue; */
+}
+
+#mainBody {
+	text-align: center;
+	/* display: flex; */
+	/* justify-content: center; */
+}
+
+#mainHead {
+	background: rgba(255, 0, 0, 0.5);
+	color: white;
+	padding: 30px;
+	border-bottom: 15px solid pink;
+}
+
+#mainHeading {
+	text-align: center;
+}
+
+.translateButton {
+	font-size: 24px;
+}
+
+.demandBox {
+	/* align-items: center; */
+	/* justify-content: center; */
+	width: 100%;
+}
+
+#lowerBody {
+	text-align: center;
+	padding: 40px;
+	color: white;
+	background: rgba(0, 0, 128, 0.7);
+	margin: 40px 0px;
+	border-top: 13px solid rgba(0, 0, 255, 0.3);
+}
+
+/* #forBoys { */
+	/* float: left; */
+	/* width: 100%; */
+/* } */
+
+/* #forGirls { */
+	/* float: right; */
+	/* width: 100%; */
+/* } */
+
+/* td { */
+	/* border: 1px solid black; */
+/* } */
+
+/* tr { */
+	/* border: 1px solid black; */
+/* } */
+
+/* .none { */
+	/* background: grey; */
+/* } */
+
+/* .yellow { */
+	/* background: yellow; */
+/* } */
