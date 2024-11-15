@@ -110,29 +110,6 @@ lh5.innerText = WebsiteDataEnglish [3][4];
 
 
 
-
-// testingButton.addEventListener ("click", function (e) {
-	// e.preventDefault ();
-	
-	// tableBoy.innerHTML = "";
-	// tableGirl.innerHTML = "";
-	
-	// if (language == "english") {
-		// language = "nepali";		
-		// boyHeading.innerText = WebsiteDataNepali [0][0];
-		// girlHeading.innerText = WebsiteDataNepali [0][1];
-	// }
-	// else {
-		// language = "english";
-		// boyHeading.innerText = WebsiteDataEnglish [0][0];
-		// girlHeading.innerText = WebsiteDataEnglish [0][1];
-	// }
-	
-	// showData ();
-	
-// })
-
-
 translateButtonNepali.addEventListener ("click", function (e) {
 	e.preventDefault ();
 	
@@ -150,6 +127,8 @@ translateButtonNepali.addEventListener ("click", function (e) {
 	lh3.innerText = WebsiteDataNepali [3][2];
 	lh4.innerText = WebsiteDataNepali [3][3];
 	lh5.innerText = WebsiteDataNepali [3][4];
+	
+	setNoticeUp (language);
 	
 	
 	showData ();
@@ -172,5 +151,26 @@ translateButtonEnglish.addEventListener ("click", function (e) {
 	lh4.innerText = WebsiteDataEnglish [3][3];
 	lh5.innerText = WebsiteDataEnglish [3][4];
 	
+	setNoticeUp (language);
+	
 	showData ();
 })
+
+
+// for notice
+const letterHeading = document.getElementById ("newsLetter_lh1");
+const letterParagraph = document.getElementById ("newsLetter_lhp");
+
+letterHeading.innerText = NoticeEnglish [0];
+letterParagraph.innerText = NoticeEnglish [1];
+// settting the contents for to display
+function setNoticeUp (lang) {
+	if (lang == "english") {
+		letterHeading.innerText = NoticeEnglish [0];
+		letterParagraph.innerText = NoticeEnglish [1];
+	}
+	else if (lang == "nepali") {
+		letterHeading.innerText = NoticeNepali [0];
+		letterParagraph.innerText = NoticeNepali [1];
+	}
+}

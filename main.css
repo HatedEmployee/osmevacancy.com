@@ -1,10 +1,10 @@
 body {
-	font-size: 40px;
+	font-size: 24px;
 	margin: 0;
 	background: rgb(255, 255, 185);
 	color: grey;
 	
-	font-family: monospace;
+	font-family: times new roman;
 }
 
 table, th, td {
@@ -42,16 +42,19 @@ table, th, td {
 .demandBox {
 	/* align-items: center; */
 	/* justify-content: center; */
-	width: 100%;
+	width: 90%;
 }
 
 #lowerBody {
 	text-align: center;
 	padding: 40px;
 	color: white;
+	font-family: sans;
+	font-weight: normal;
 	background: rgba(0, 0, 128, 0.7);
 	margin: 40px 0px;
 	border-top: 13px solid rgba(0, 0, 255, 0.3);
+	font-size: 18px;
 }
 
 /* #cyprusTime { */
@@ -100,4 +103,16 @@ table, th, td {
 	font-family: consolas;
 	border: 1px solid black;
 	padding: 30px;
+	background: white;
+}
+
+/* for the notice */
+#newsLetter {
+	border: 2px solid black;
+	margin: 20px;
+	border-radius: 7px;
+	background: rgba(0, 188, 100, 0.7);
+	border-top: 7px solid lime;
+	color: white;
+	padding: 10px;
 }
