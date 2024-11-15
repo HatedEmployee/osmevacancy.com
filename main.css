@@ -84,3 +84,20 @@ table, th, td {
 /* .yellow { */
 	/* background: yellow; */
 /* } */
+
+/* for cyprus time */
+#cyprusTime {
+	font-weight: bold;
+	font-size: 42px;
+	text-align: center;
+}
+
+#cyprusDate {
+	text-align: left;
+}
+
+#cyprusTimeContainer {
+	font-family: consolas;
+	border: 1px solid black;
+	padding: 30px;
+}
