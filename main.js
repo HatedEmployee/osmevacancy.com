@@ -1,3 +1,4 @@
+// for demands
 const tableBoy = document.getElementById ("table-boy");
 const tableGirl = document.getElementById ("table-girl");
 const testingButton = document.getElementById ("testingButton");
@@ -19,19 +20,23 @@ const lh3 = document.getElementById ("lh3");
 const lh4 = document.getElementById ("lh4");
 const lh5 = document.getElementById ("lh5");
 
+// language of the site -> default -> english
 let language = "english";
 
 
+// function to update the data on the site
 function showData () {
-if (language == "english") {
+	if (language == "english") {
 		for (let i = 0; i < arrEnglishBoys.length; i++) {
 			let he = document.createElement ("tr");
 			tableBoy.append (he);
 			
-			let tabh1 = document.createElement ("th");
-			let tabh2 = document.createElement ("th");
+			let tabh1 = document.createElement ("th"); // the table head for position
+			let tabh2 = document.createElement ("th"); // the table head for salary
 			
+			// tableBoy.append (tabh1);
 			tabh1.innerText = arrEnglishBoys[i][0];
+			// link_tabh1.innerText = arrEnglishBoys[i][0];
 			tabh2.innerText = arrEnglishBoys[i][1];
 			
 			tableBoy.append(tabh1);

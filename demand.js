@@ -18,14 +18,17 @@ const arrEnglishBoys = [
 	["Waiter", "Euro 700 - Euro 800"],
 	// ["Welder", "Euro 750 - Euro 1000"],
 	// ["Eletricial", "Euro 750 - Euro 900"],
-	["Butcher", "Euro 920"],
+	// ["Butcher", "Euro 920"],
+	["Janapese Chef (Sushi Chef) ", "Euro 900 - Euro 1800"],
+	["Wok Chef (Chinese & Asian Cuisine)", "Euro 900 - Euro 1800"],
+	["All Rounder Chef ", "Euro 900 - Euro 1800"],
 ]
 
 const arrEnglishGirls = [
 	["\t\tDesignation / Job\t\t", "\t\tSalary\t\t"],
 	["Waitress", "Euro 700 - Euro 800"],
 	["Housekeeping / Chambermaid", "Euro 700 - Euro 800"],
-	["Receptionist", "Euro 800 - Euro 900"],
+	// ["Receptionist", "Euro 800 - Euro 900"],
 	// ["Cashier", "Euro 800 - Euro 900"],
 	// ["Spa Therapist", "Euro 700 - Euro 1000"],
 	["Barista", "Euro 700 - Euro 800"],
@@ -51,14 +54,17 @@ const arrNepaliBoys = [
 	["वेटर ", "यूरो ७०० - यूरो ८०० "],
 	// ["वेल्दर", "यूरो ७५० - यूरो १००० "],
 	// ["एलेक्त्रिसियन", "यूरो ७५० - यूरो ९०० "],
-	["कसै / मासु काट्ने", "यूरो ९२०"],
+	// ["कसै / मासु काट्ने", "यूरो ९२०"],
+	["जापनिज सेफ (सुशी सेफ)", "यूरो ८०० - यूरो १८००"],
+	["वेाक सेफ (चाइनिज र एसियान कुजिन)", "यूरो ८०० - यूरो १८००"],
+	["अल राउन्डर सेफ", "यूरो ८०० - यूरो १८००"],
 ]
 
 const arrNepaliGirls = [
 	["\t\tपदनाम / काम\t\t", "\t\tतलब\t\t"],
 	["वैत्रेस", "यूरो ७०० - यूरो ८००"],
 	["होउसकीपिंग / चेम्बर्मैद", "यूरो ७०० - यूरो ८००"],
-	["रेसेप्सनीस्त", "यूरो ८०० - यूरो ९००"],
+	// ["रेसेप्सनीस्त", "यूरो ८०० - यूरो ९००"],
 	// ["क्यसिएर", "यूरो ८०० - यूरो ९००"],
 	// ["स्पा थेरापिस्ट", "यूरो ७०० - यूरो १०००"],
 	["बारिस्ता", "यूरो ७०० - यूरो ८००"],

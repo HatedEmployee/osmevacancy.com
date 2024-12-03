@@ -4,7 +4,7 @@ body {
 	background: rgb(255, 255, 185);
 	color: grey;
 	
-	font-family: times new roman;
+	font-family: courier;
 }
 
 table, th, td {
@@ -49,8 +49,7 @@ table, th, td {
 	text-align: center;
 	padding: 40px;
 	color: white;
-	font-family: sans;
-	font-weight: normal;
+	font-family: roboto;
 	background: rgba(0, 0, 128, 0.7);
 	margin: 40px 0px;
 	border-top: 13px solid rgba(0, 0, 255, 0.3);
@@ -100,7 +99,7 @@ table, th, td {
 }
 
 #cyprusTimeContainer {
-	font-family: consolas;
+	font-family: courier new;
 	border: 1px solid black;
 	padding: 30px;
 	background: white;
@@ -115,4 +114,10 @@ table, th, td {
 	border-top: 7px solid lime;
 	color: white;
 	padding: 10px;
+	font-family: roboto;
+}
+
+#newsLetter_lhp {
+	font-weight: none;
+	font-size: 18px;
 }
