@@ -1,0 +1,132 @@
+<!-- checking to see if we can use <ul> inside of the table header</ul> -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Testing</title>
+		<meta charset="UTF-8">
+		
+		<style>
+			body {
+				background: #aaaaee;
+				color: black;
+			}
+		
+			.formThis {
+				border: 1px solid black;
+				border-radius: 7px;
+				padding: 15px;
+				background: #bffeaf;
+			}
+			
+			td, th {
+				padding: 3px;
+			}
+			
+			#logoutButton {
+				background: #ee7766;
+				border-radius: 7px;
+				padding: 10px;
+				float: right;
+				color: white;
+			}
+			
+			#logoutButton:active {
+				transform: translate(5px, 5px);
+			}
+		</style>
+		
+	</head>
+	<body>
+				
+		<button id="logoutButton">Logout / लगआउट</button>
+		<a href="showDetail.html" target="_blank">Detail / विवरण</a>
+		
+		<script>
+			// for logging out
+			document.getElementById ("logoutButton").addEventListener ("click", function (e) {
+				e.preventDefault ();
+				
+				sessionStorage.setItem ("isAllowed", "false");
+				sessionStorage.setItem ("Username", "NULL");
+				
+				<!-- location.href.replace ("loginPage.html")				-->
+				window.location.replace ("loginPage.html");
+			})
+		</script>
+		<!-- seach table -->
+		<form id="container" class="formThis">
+			In this box, you search for your name and the job you are looking for / <br>
+			यस बक्समा, तपाईंले आफ्नो नाम र तपाईंले खोजिरहनुभएको काम खोज्नुहोस् <br><br>
+			
+			To show everything just select 'showAll' option in both the boxes / <br>
+			सबै कुरा देखाउनको लागि दुबै बाकसमा 'showAll' विकल्प चयन गर्नुहोस् <br><br>
+			<!-- <input type="text" placeholder="Name of Agent" id="mainInput"> -->
+			<label for="agentValue">Of Which Agent?</label>
+			<select name="agentValue" id="mainInput">
+				<option value="showAll">Show All</option>
+				<option value="Radha Budhathoki">Radha Ma'am</option>
+				<option value="Paru Lama">Paru Ma'am</option>
+				<option value="Subraj Lama">Subraj Lama</option>
+				<option value="Gyanendra Tamang">Gyanendra Tamang</option>
+				<option value="Manoj Limbu">Manoj Limbu</option>
+				<option value="Ful Maya Ghale">Ful Maya Ghale</option>
+				<option value="Amrit Gurung">Amrit Gurung</option>
+				<option value="Aman Magar">Aman Magar</option>
+			</select>
+			<!-- <input type="text" placeholder="which job?" id="jobInput"> -->
+			<label for="jobValue">Which Job?</label>
+			<select name="jobValue" id="jobInput">
+				<option value="showAll">Show All</option>
+				<option value="Cook">Cook</option>
+				<option value="Chambermaid">Chambermaid</option>
+				<option value="Bartender">Bartender</option>
+				<option value="Barista">Barista</option>
+				<option value="Receptionist">Receptionist</option>
+				<option value="Salesperson">Salesperson</option>
+				<option value="Kitchen Helper">Kitchen Helper</option>
+				<option value="Waiter">Waiter</option>
+			</select>
+			<button id="enterButton">Submit Query</button>
+
+		</form>
+		
+		<br><br>
+		<!-- search table for names -->
+		<form id="nameQuery" class="formThis">
+			<!-- showing information -->
+			This box is seperate from the box above, here you search for names just remember to use, for e.g. 'Aman' except for 'aman' <br>
+			यो बाकस माथिको बाकसबाट अलग छ, यहाँ तपाईंले नामहरू खोज्नुहुन्छ केवल क्यापिटलाइज गर्न सम्झनुहोस्, उदाहरणका लागि। 'aman' होइन 'Aman' <br>
+			<input type="text" id="nameInput" placeholder="Name of the Candidate">
+			<button>Query By Candidate Name</button>
+		</form>
+		
+		<hr>
+		<h1 id="headingOne">Showing Results For - referred by -</h1>
+		
+		<!-- table to show data -->
+		<table border=1 id="mainTable">
+			<tr>
+				<th>S.No.</th>
+				<th>Name</th>
+				<th>Contact No.</th>
+				<th>Position</th>
+				<th>Age</th>
+				<th>Sex</th>
+				<th>Police/Medical</th>
+				<th>Referred By</th>
+				<th>Year of Experience</th>
+				<th>Country of Experience</th>
+				<th>Passport No.</th>
+			</tr>
+		</table>
+		
+		
+		<!-- scripting -->
+		<script src="agentInfo.js"></script>
+		<script src="candidateData.js"></script>
+		<script src="main.js"></script>
+		
+		<!-- for query using name -->
+		<script src="beta.js"></script>
+	</body>
+</html>

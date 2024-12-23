@@ -1,0 +1,124 @@
+<!-- this is a simple log in page 
+
+I will simulate a button or assume that the button has already been pressed 
+
+in this page I want to show something like when the agent's enter their phone number I will pass them a key and it will be used to login to the database / index.html for now
+-->
+
+<!-- I need a list of agents where the will have their number for now I will just use my number -->
+
+<!-- this page must have a single instance meaning there should not be any external js or css files -->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LogIn Page</title>
+		
+		<style>
+			body {
+				/* background: rgba(255, 168, 30, 0.5); */
+				
+			}
+			
+			#mainContainer {
+				background: rgba(0, 0, 0, 0.3);
+				border: 3px solid black;
+				border-radius: 7px;
+				text-align: center;
+			}
+			
+			a {
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainContainer">
+			<!-- title -->
+			<h3>Login Page</h3>
+			<p>
+				Please input your phone number and passcode in the input field<br>
+				below if you are a registered Authority then this page will output a <br>
+				link, using which you can query about your candidates.<br>
+				If you get error messages then please kindly contact at <a href="#">omshreemahashakti057@gmail.com</a>. <br><br>
+				
+				कृपया इनपुट फिल्डमा आफ्नो फोन नम्बर र पासकोड प्रविष्ट गर्नुहोस्<br>
+				तल यदि तपाईं एक दर्ता प्राधिकरण हुनुहुन्छ भने यो पृष्ठले <br> 
+				आउटपुट गर्नेछ लिङ्क, जसको प्रयोग गरेर तपाईं आफ्नो उम्मेद्वारहरूको बारेमा प्रश्न गर्न सक्नुहुन्छ।<br>
+				यदि तपाइँ त्रुटि सन्देशहरू प्राप्त गर्नुहुन्छ भने कृपया कृपया <a href="#">omshreemahashakti057@gmail.com</a> मा सम्पर्क गर्नुहोस्।
+			</p>
+			
+			<form id="submitLogin">
+				Enter your Phone Number : <input type="number" id="loginFirst"> <br>
+				Enter your Passcode : <input type="password" id="loginSecond">
+				
+				<button id="showPasscode">Show Passcode</button> <br>
+				<button>Submit</button>
+			</form>
+			
+			<!-- this is the link to the page but will not be shown from the beginning -->
+			<a href="" id="outputLink"></a>
+		</div>
+		
+		<!-- scripting -->
+		<script src="agentInfo.js"></script>
+		<script>
+			// this is currently only my number later on it will be any other things not just this
+			<!-- const agentsNo = [ -->
+				<!-- ["9702087159", "ADMIN"], -->
+				<!-- ["9851034019", "RB-34019"], -->
+				<!-- ["9808867133", "AP-67133"], -->
+				<!-- ["9849040279", "AM-40279"], -->
+				<!-- [""] -->
+			<!-- ] -->
+			
+			const link = "./everything.html";
+		
+			const submitLogin = document.getElementById ("submitLogin");
+			const loginFirst = document.getElementById ("loginFirst");
+			const loginSecond = document.getElementById ("loginSecond");
+			const anotherLogin = document.getElementById ("outputLink");
+			
+			let success = "false";
+			
+			submitLogin.addEventListener ("submit", function (e) {
+				e.preventDefault ();
+				
+				for (let i = 0; i < agentsNo.length; i++) {
+					if (loginFirst.value == agentsNo[i][0] && loginSecond.value == agentsNo[i][1]) {
+						anotherLogin.setAttribute ("href", link);
+						anotherLogin.innerText = "Login Link >> लगइन लिङ्क";
+						
+						sessionStorage.setItem ("isAllowed", "true");
+						sessionStorage.setItem ("Username", agentsNo[i][0]);
+						
+						success = "true";
+					}
+				}
+				if (success != "true") {
+					anotherLogin.setAttribute ("href", "#");
+					anotherLogin.innerText = "There is no data of you in the database | डाटाबेसमा तपाईको कुनै डाटा छैन"
+				}
+				
+				loginFirst.value = "";
+			})
+			
+			
+			// showing or hiding passcode
+			const showPasscode = document.getElementById ("showPasscode");
+			
+			showPasscode.addEventListener ("click", function(e) {
+				e.preventDefault ();
+				
+				if (loginSecond.getAttribute ("type") == "password") {
+					loginSecond.setAttribute ("type", "text");
+					showPasscode.innerText = "Hide Passcode";
+				}
+				else if (loginSecond.getAttribute ("type") == "text") {
+					loginSecond.setAttribute ("type", "password");
+					showPasscode.innerText = "Show Passcode";
+				}
+			})
+		</script>
+	</body>
+</html>
