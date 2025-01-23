@@ -8,7 +8,7 @@ const arrEnglishBoys = [
 	// ["Italian Cook", "Euro 800 - Euro 1000"],
 	// ["Continental Cook", "Euro 800 - Euro 1000"],
 	// ["Sushi Cook", "Euro 800 - Euro 1000"],
-	// ["Pastry Cook", "Euro 800 - Euro 1000"],
+	["Pastry Cook", "Euro 800 - Euro 1000"],
 	["Cook", "Euro 800 - Euro 1000"],
 	["Kitchen Helper / Assistant Cook", "Euro 700 - Euro 800"],
 	// ["Baker", "Euro 750 - Euro 1000"],
@@ -22,6 +22,7 @@ const arrEnglishBoys = [
 	["Janapese Chef (Sushi Chef) ", "Euro 900 - Euro 1800"],
 	["Wok Chef (Chinese & Asian Cuisine)", "Euro 900 - Euro 1800"],
 	["All Rounder Chef ", "Euro 900 - Euro 1800"],
+	["Stonemason (person working with Marbels)", "Euro 900 - Euro 1000"],
 ]
 
 const arrEnglishGirls = [
@@ -44,7 +45,7 @@ const arrNepaliBoys = [
 	// ["इटालियन कुक", "यूरो ८०० - यूरो १००० "],
 	// ["कन्टिनेन्टल कुक ", "यूरो ८०० - यूरो १००० "],
 	// ["सुशी कुक", "यूरो ८०० - यूरो १०००"],
-	// ["पेस्त्री कुक", "यूरो ८०० - यूरो १००० "],
+	["पेस्त्री कुक", "यूरो ८०० - यूरो १००० "],
 	["कुक", "यूरो ८०० - यूरो १०००"],
 	["कित्चेन्न हेल्पर / अस्सिस्तेन्त कुक", "यूरो ७०० - यूरो ८००"],
 	// ["बेकर", "यूरो ७५० - यूरो १०००"],
@@ -58,6 +59,7 @@ const arrNepaliBoys = [
 	["जापनिज सेफ (सुशी सेफ)", "यूरो ८०० - यूरो १८००"],
 	["वेाक सेफ (चाइनिज र एसियान कुजिन)", "यूरो ८०० - यूरो १८००"],
 	["अल राउन्डर सेफ", "यूरो ८०० - यूरो १८००"],
+	["Stonemason (मार्बल संग काम गर्ने व्यक्ति)", "यूरो ९०० - यूरो १०००"],
 ]
 
 const arrNepaliGirls = [
