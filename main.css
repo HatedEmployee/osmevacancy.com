@@ -4,7 +4,7 @@ body {
 	background: rgb(255, 255, 185);
 	color: grey;
 	
-	font-family: courier;
+	font-family: Liberation-sans;
 }
 
 table, th, td {
@@ -13,8 +13,8 @@ table, th, td {
 	border-collapse: collapse;
 	
 	
-	margin-left: 30px;
-	padding: 10px;
+	margin-left: 10px;
+	padding:5px;
 	/* background: blue; */
 }
 
@@ -42,7 +42,10 @@ table, th, td {
 .demandBox {
 	/* align-items: center; */
 	/* justify-content: center; */
-	width: 90%;
+	/* width: 90%; */
+	font-size: 17px;
+	text-align: left;
+	color: black;
 }
 
 #lowerBody {

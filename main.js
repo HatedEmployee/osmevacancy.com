@@ -31,16 +31,25 @@ function showData () {
 			let he = document.createElement ("tr");
 			tableBoy.append (he);
 			
-			let tabh1 = document.createElement ("th"); // the table head for position
-			let tabh2 = document.createElement ("th"); // the table head for salary
+			let tabh1 = document.createElement ("td"); // the table head for position
+			let tabh2 = document.createElement ("td"); // the table head for salary
+			let tabh3 = document.createElement ("td"); // the table head for age
+			let tabh4 = document.createElement ("td"); // the table head for Quota
+			let tabh5 = document.createElement ("td"); // the table head for requirements
 			
 			// tableBoy.append (tabh1);
 			tabh1.innerText = arrEnglishBoys[i][0];
 			// link_tabh1.innerText = arrEnglishBoys[i][0];
 			tabh2.innerText = arrEnglishBoys[i][1];
+			tabh3.innerText = arrEnglishBoys[i][2];
+			tabh4.innerText = arrEnglishBoys[i][3];
+			tabh5.innerText = arrEnglishBoys[i][4];
 			
 			tableBoy.append(tabh1);
 			tableBoy.append(tabh2);
+			tableBoy.append (tabh3);
+			tableBoy.append (tabh4);
+			tableBoy.append (tabh5);
 		}
 		
 	}
@@ -49,14 +58,23 @@ function showData () {
 			let he = document.createElement ("tr");
 			tableBoy.append (he);
 			
-			let tabh1 = document.createElement ("th");
-			let tabh2 = document.createElement ("th");
+			let tabh1 = document.createElement ("td");
+			let tabh2 = document.createElement ("td");
+			let tabh3 = document.createElement ("td"); // the table head for age
+			let tabh4 = document.createElement ("td"); // the table head for Quota
+			let tabh5 = document.createElement ("td"); // the table head for requirements
 			
 			tabh1.innerText = arrNepaliBoys[i][0];
 			tabh2.innerText = arrNepaliBoys[i][1];
+			tabh3.innerText = arrNepaliBoys[i][2];
+			tabh4.innerText = arrNepaliBoys[i][3];
+			tabh5.innerText = arrNepaliBoys[i][4];
 			
 			tableBoy.append(tabh1);
 			tableBoy.append(tabh2);
+			tableBoy.append (tabh3);
+			tableBoy.append (tabh4);
+			tableBoy.append (tabh5);
 		}
 	}
 	
@@ -66,14 +84,23 @@ function showData () {
 			let he = document.createElement ("tr");
 			tableGirl.append (he);
 			
-			let tabh1 = document.createElement ("th");
-			let tabh2 = document.createElement ("th");
+			let tabh1 = document.createElement ("td");
+			let tabh2 = document.createElement ("td");
+			let tabh3 = document.createElement ("td");
+			let tabh4 = document.createElement ("td");
+			let tabh5 = document.createElement ("td");
 			
 			tabh1.innerText = arrEnglishGirls[i][0];
 			tabh2.innerText = arrEnglishGirls[i][1];
+			tabh3.innerText = arrEnglishGirls[i][2];
+			tabh4.innerText = arrEnglishGirls[i][3];
+			tabh5.innerText = arrEnglishGirls[i][4];
 			
 			tableGirl.append(tabh1);
 			tableGirl.append(tabh2);
+			tableGirl.append (tabh3);
+			tableGirl.append (tabh4);
+			tableGirl.append (tabh5);
 		}
 		
 	}
@@ -82,14 +109,23 @@ function showData () {
 			let he = document.createElement ("tr");
 			tableGirl.append (he);
 			
-			let tabh1 = document.createElement ("th");
-			let tabh2 = document.createElement ("th");
+			let tabh1 = document.createElement ("td");
+			let tabh2 = document.createElement ("td");
+			let tabh3 = document.createElement ("td");
+			let tabh4 = document.createElement ("td");
+			let tabh5 = document.createElement ("td");
 			
 			tabh1.innerText = arrNepaliGirls[i][0];
 			tabh2.innerText = arrNepaliGirls[i][1];
+			tabh3.innerText = arrNepaliGirls[i][2];
+			tabh4.innerText = arrNepaliGirls[i][3];
+			tabh5.innerText = arrNepaliGirls[i][4];
 			
 			tableGirl.append(tabh1);
 			tableGirl.append(tabh2);
+			tableGirl.append (tabh3);
+			tableGirl.append (tabh4);
+			tableGirl.append (tabh5);
 		}
 	}
 }
