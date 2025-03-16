@@ -168,7 +168,21 @@ const arrEnglishBoys = [
 		2. Must know basic to intermediate English.\n",
 		"1. Free shared accomodation\n\
 		2. Free Food\n"
-	]
+	],
+	[
+		"Life Guard (Swimming Pool)", 
+		"€700 - €800", 
+		"Above 20", 
+		"10", 
+		"1. Must have working experience (training will not do).\n\
+		2. Must be physically fit.\n\
+		3. Incase of fatality, our office will not to be blamed.",
+		"1. Free shared accommodation\n\
+		2. Free Food\n\
+		3. Social Secrity Compensation\n\
+		4. Private Medical Insurance\n\
+		(optional) Round Ticket during off-seasons"
+	],
 ]
 
 const arrEnglishGirls = [
@@ -407,6 +421,20 @@ const arrNepaliBoys = [
 		2. आधारभूत देखि मध्यवर्ती अंग्रेजी जान्नु पर्छ।\n",
 		"१. नि:शुल्क साझा आवास\n\
 		२. नि:शुल्क खाना\n"
+	],
+	[
+		"लाइफ गार्ड (स्विमिङ पुल)", 
+		"€७०० - €८००", 
+		"२० भन्दा माथि", 
+		"१०", 
+		"१. काम गर्ने अनुभव हुनुपर्छ (तालिमले काम गर्दैन)।\n\
+		२. शारीरिक रूपमा तन्दुरुस्त हुनुपर्छ।\n\
+		३. मृत्यु भएमा, हाम्रो कार्यालयलाई दोष दिइने छैन।",
+		"१. नि:शुल्क साझा आवास\n\
+		२. नि:शुल्क खाना\n\
+		३. सामाजिक सुरक्षा क्षतिपूर्ति\n\
+		४. निजी चिकित्सा बीमा\n\
+		(वैकल्पिक) अफ-सिजनको समयमा राउन्ड टिकट"
 	]
 ]
 
